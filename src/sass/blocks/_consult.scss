@@ -1,0 +1,14 @@
+.consult {
+    min-height: 680px;
+    padding: 100px 0 108px 0;
+    background: url(../img/bg/sneaker_bg.jpg) center (center/cover) no-repeat;
+    &__subtitle {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        display: flex;
+        align-items: flex-end;
+        color: #FFFFFF;
+        margin-top: 8px;
+    }
+}
