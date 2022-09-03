@@ -80,6 +80,17 @@
             padding: 0 42px;
         }
     }
+
+    .review {
+        &-item {
+            &__info {
+                width: 480px;
+            }
+            &__text {
+                line-height: 22px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -179,6 +190,22 @@
             display: block;
             margin: 0 auto;
             margin-bottom: 19px;
+        }
+    }
+
+    .review {
+        &-item {
+            flex-wrap: wrap;
+            &__img {
+                display: block;
+                margin: 0 auto;
+            }
+            &__info {
+                width: 443px;
+                margin: 0 auto;
+                margin-top: 30px;
+                text-align: center;
+            }
         }
     }
 }
@@ -341,6 +368,20 @@
                 line-height: 17px;
                 display: block;
                 width: 100%;
+            }
+        }
+    }
+
+    .review {
+        &__title {
+            font-size: 23px;
+            line-height: 23px;
+        }
+        &-item {
+            margin-top: 50px;
+            &__text {
+                font-size: 14px;
+                line-height: 20px;
             }
         }
     }
