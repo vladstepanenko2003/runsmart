@@ -1,3 +1,11 @@
+@media (max-width: 900px) {
+    .carousel {
+        button {
+            display: none;
+        }
+    }
+}
+
 @media (max-width: 1040px) {
     .promo {
         background: url('../img/bg/woman_bg_small.jpg') center (center/cover) no-repeat;
@@ -57,6 +65,20 @@
     }
     .feed-form {
         margin-top: 45px;
+    }
+
+    .carousel {
+        &__inner {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .catalog {
+        &__content {
+            padding: 0 42px;
+        }
     }
 }
 
@@ -121,6 +143,7 @@
         &__item {
             font-size: 12px;
             line-height: 15px;
+            width: 170px;
             span {
                 margin-top: 22px;
                 font-size: 15px;
@@ -144,6 +167,18 @@
         width: 280px;
         input {
             height: 45px;
+        }
+    }
+    
+    .catalog {
+        padding-bottom: 50px;
+        &__title {
+            font-size: 27px;
+        }
+        &-item {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 19px;
         }
     }
 }
@@ -223,14 +258,14 @@
     .title {
         text-align: center;
         font-size: 17px;
-        line-height: 28px;
+        line-height: 22px;
     }
     .consult {
         min-height: 500px;
         padding: 45px 0 40px 0;
         &__subtitle {
             text-align: center;
-            font-size: 15px;
+            font-size: 14px;
             line-height: 20px;
             margin-top: 15px;
             justify-content: center;
@@ -240,6 +275,73 @@
         width: 100%;
         input {
             font-size: 14px;
+        }
+    }
+    .catalog {
+        padding-bottom: 30px;
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__tabs {
+            flex-wrap: wrap;
+
+        }
+        &__tab {
+            width: 185px;
+            height: 45px;
+            margin-bottom: 10px;
+            line-height: 42px;
+            font-size: 16px;
+        }
+        &__content {
+            padding: 0;
+            margin-top: 45px;
+        }
+        &-item {
+            width: 260px;
+            &__title {
+                font-size: 14px;
+                line-height: 22px;
+            }
+            &__descr {
+                font-size: 13px;
+                line-height: 21px;
+            }
+            &__link {
+                line-height: 13px;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+            hr {
+                width: 100%;
+            }
+            &__footer {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            &__prices {
+                text-align: center;
+            }
+            &__btn {
+                margin-top: 10px;
+                height: 35px;
+                width: 120px;
+                font-size: 12px;
+            }
+            &__list {
+                li {
+                    font-size: 13px;
+                    line-height: 19px;
+                    margin-bottom: 5px;
+                }
+            }
+            &__back {
+                font-size: 13px;
+                line-height: 17px;
+                display: block;
+                width: 100%;
+            }
         }
     }
 }
