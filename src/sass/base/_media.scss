@@ -1,7 +1,7 @@
-@media (max-width: 900px) {
+@media (max-width: 1120px) {
     .carousel {
-        button {
-            display: none;
+        .container {
+            max-width: 80%;
         }
     }
 }
@@ -91,11 +91,48 @@
             }
         }
     }
+
+    .footer {
+        height: 550px;
+        iframe {
+            height: 100%;
+        }
+        &__bigger_iframe {
+            display: none;
+        }
+        &__769_iframe {
+            display: block;
+        }
+        &__info {
+            width: 410px;
+            height: 240px;
+            address {
+                font-size: 17px;
+                line-height: 17px;
+            }
+        }
+        &__phone {
+            font-size: 17px;
+            line-height: 17px;
+        }
+        &__link {
+            width: 47px;
+            height: 46px;
+            img {
+                height: 23px;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .container {
         width: 540px;
+    }
+    .carousel {
+        button {
+            display: none;
+        }
     }
     .header {
         &__logo {
@@ -205,6 +242,32 @@
                 margin: 0 auto;
                 margin-top: 30px;
                 text-align: center;
+            }
+        }
+    }
+    .footer {
+        &__info {
+            width: 340px;
+            height: 210px;
+            address {
+                font-size: 15px;
+                line-height: 15px;
+                margin-bottom: 22px;
+            }
+        }
+        &__phone {
+            font-size: 15px;
+            line-height: 15px;
+            margin-bottom: 23px;
+        }
+        &__links {
+            width: 185px;
+        }
+        &__link {
+            width: 41px;
+            height: 40px;
+            img {
+                height: 21px;
             }
         }
     }
@@ -383,6 +446,23 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+        }
+    }
+
+    .footer {
+        address {
+            font-size: 17px;
+            line-height: 17px;
+        }
+        &__phone {
+            font-size: 17px;
+            line-height: 17px;
+        }
+        &__links {
+            width: 210px;
+        }
+        &__info {
+            width: 100%;
         }
     }
 }
