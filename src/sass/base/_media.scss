@@ -63,7 +63,7 @@
             margin-top: 12px;
         }
     }
-    .feed-form {
+    .feed-form_modal {
         margin-top: 45px;
     }
 
@@ -121,6 +121,22 @@
             img {
                 height: 23px;
             }
+        }
+    }
+
+    .modal {
+        width: 367px;
+        min-height: 386px;
+        &__subtitle {
+            font-size: 17px;    
+            line-height: 17px;
+        }
+        &__descr {
+            margin-top: 15px;
+        }
+        .feed-form_modal {
+            width: 100%;
+            margin-top: 37px;
         }
     }
 }
@@ -269,6 +285,23 @@
             img {
                 height: 21px;
             }
+        }
+    }
+
+    .modal {
+        width: 315px;
+        padding: 25px;
+        &__subtitle {
+            font-size: 16px;
+            line-height: 16px;
+        }
+        &__descr {
+            font-size: 14px;    
+            line-height: 14px;
+            margin-top: 19px;
+        }
+        .feed-form_modal {
+            margin-top: 30px;
         }
     }
 }
@@ -463,6 +496,31 @@
         }
         &__info {
             width: 100%;
+        }
+    }
+
+    #consultation {
+        .modal {
+            &__subtitle, &__descr {
+                display: none;
+            }
+        }
+    }
+
+    .modal {
+        padding: 17px;
+        width: 77%;
+        min-height: 350px;
+        &__descr {
+            margin-top: 12px;
+        }
+        &__320 {
+            display: block;
+        }
+        &__close {
+            right: -30px;
+            font-size: 38px;
+            line-height: 23px;
         }
     }
 }
