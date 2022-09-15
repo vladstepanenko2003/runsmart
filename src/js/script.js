@@ -50,4 +50,37 @@ $(document).ready(function(){
             $('.overlay, #order').fadeIn();
         });
     });
+
+    function validateForms(form) {
+        $(form).validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                tel: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите свое имя",
+                    minlength: jQuery.validator.format("Введите минимум {0} символа")
+                },
+                tel: "Пожалуйста, введите ваш номер телефона",
+                email: {
+                    required: "Пожалуйста введите вашу почту",
+                    email: "Неправильно набран адрес почты"
+                }
+            }
+        });
+    };
+
+    validateForms('#consultation form');
+    validateForms('#order form');
+    validateForms('#main-form');
+
+    $("input[name=tel]").mask("+7 (999) 999-9999");
 });
